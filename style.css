@@ -27,8 +27,13 @@ form {
     padding-bottom: 2rem;
 }
 
+h1{
+    width: 11rem;
+}
+
 label {
     font-size: 16px;
+    margin: 0rem;
 }
 
 button {
@@ -48,6 +53,7 @@ input {
     height: 3rem;
     padding: 0px 0px 0px 20px;
     cursor: pointer;
+    margin: 0.8rem 0rem 0.8rem;
 }
 
 input:hover {
@@ -144,11 +150,12 @@ input[type="radio"]:checked+label:before {
 .main-container {
     display: flex;
     justify-content: center;
-    min-width: 49rem;
+    min-width: 40rem;
     align-items: center;
     flex-direction: column;
     border-radius: 1rem;
     background-color: hsl(0, 0%, 100%);
+    padding: 0.5px;
 }
 
 /* #region container-name */
@@ -185,6 +192,7 @@ input[type="radio"]:checked+label:before {
 
 .container-email {
     width: 100%;
+    margin-top: 1rem;
 }
 
 .container-email>input {
@@ -217,6 +225,7 @@ input[type="radio"]:checked+label:before {
     border-radius: 0.3rem;
     border-color: hsl(186, 15%, 59%);
     height: 3rem;
+    padding-left: 2rem;
 }
 
 #enquiry,
@@ -229,7 +238,6 @@ input[type="radio"]:checked+label:before {
 #request,
 label {
     align-self: center;
-    margin-left: 5%;
 }
 
 .div-enquiry {
@@ -245,6 +253,7 @@ label {
 /* #region Message */
 .container-message {
     width: 100%;
+    padding-top: 2rem;
 }
 
 #message {
@@ -254,6 +263,7 @@ label {
     resize: none;
     border-color: hsl(186, 15%, 59%);
     padding: 1rem;
+    margin: 0.8rem 0rem 0.8rem 0rem;
 }
 
 /* #endregion */
@@ -302,10 +312,16 @@ textarea::-webkit-scrollbar-thumb {
     width: 100%;
     padding: 0rem;
     margin: 0.5rem 0rem 1rem 0rem;
+    display: flex;
 }
 
 #consent-label {
     position: absolute;
+    padding-left: 2.5rem;
+}
+
+#consent-label>span{
+    padding-left: 0rem;
 }
 
 /* #endregion */
@@ -321,10 +337,11 @@ textarea::-webkit-scrollbar-thumb {
 
     #form {
         margin: 5%;
+        min-width: 20rem;
     }
 
     input {
-        margin: 0 auto;
+        margin: 0;
     }
 
     .container-last-name,
@@ -333,51 +350,63 @@ textarea::-webkit-scrollbar-thumb {
     .container-message,
     #container-query,
     #submit {
-        width: 95%;
+        width: 100%;
         padding: 0px;
-        margin: 0 auto;
+        margin: 0;
+        display: block;
     }
 
     .consent {
-        width: 95%;
+        width: 74%;
         padding: 0px;
         margin: 2rem auto;
-
+        display: block;
     }
-
+    
     .div-request,
     .div-enquiry {
         display: block;
         margin: 0rem 0rem 1rem;
-        width: 100%;
+        width: 90%;
         justify-items: center;
         align-content: center;
+        display: block;
     }
-
+    
     #message {
         height: 15rem;
+        display: block;
     }
-
+    
     .main-container {
         display: flex;
         justify-content: center;
-        min-width: 90%;
+        min-width: 10rem;
         align-items: center;
         flex-direction: column;
         border-radius: 0.3rem;
         background-color: hsl(0, 0%, 100%);
+        display: block;
     }
-
+    
     #consent-label {
         position: relative;
+        display: block;
+    }
+    
+    #form {
+        display: block;
+        
     }
 
     #message {
-        width: 90%;
+        width: 74%;
+        display: block;
     }
-
+    
     .container-email>input {
         width: 94%;
+        display: block;
     }
 
     @keyframes modalDiv600 {

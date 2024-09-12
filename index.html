@@ -19,79 +19,84 @@
 </head>
 
 <body>
+  <main>
 
-  <div class="modal karla-200" id="modalMain">
-    <div id="modalDivTitle">
-      <img id="modalImg" class="modal-img" src="assets/images/ok-circle-svgrepo-com.svg">
-      <h2 id="modalTitle" class="karla-700">
-        Message Sent!
-      </h2>
-    </div>
-    <div id="modalDivMenssage">
-      <p>Thanks for completing the form. We'll be in touch soon!</p>
-    </div>
-  </div>
-
-  <div class="main-container karla-200">
-    <form id="form">
-      <h1 class="karla-700">
-        Contact Us
-      </h1>
-
-      <div id="container-name">
-        <div id="container-first-name" class="container-first-name">
-          <label for="first-name">First Name <span>*</span> </label><input type="text" name="firstName" id="first-name">
-          <p id="error-first-name" class="error">This field is required</p>
-        </div>
-        <div id="container-last-name" class="container-last-name">
-          <label for="last-name">Last Name <span>*</span></label> <input type="text" name="lastName" id="last-name">
-          <p class="error" id="error-last-name">This field is required</p>
-        </div>
+    <div class="modal karla-200" id="modalMain">
+      <div id="modalDivTitle">
+        <img id="modalImg" class="modal-img" src="assets/images/ok-circle-svgrepo-com.svg">
+        <h2 id="modalTitle" class="karla-700">
+          Message Sent!
+        </h2>
       </div>
-
-      <div id="container-email" class="container-email">
-        <label for="email">Email Address <span>*</span></label>
-        <input type="email" name="email" id="email">
-        <p class="error" id="error-email">This field is required</p>
-        <p class="error" id="error-valid-email">Please enter a valid email address</p>
-
+      <div id="modalDivMenssage">
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
       </div>
+    </div>
 
-      <div id="container-query">
-        <p class="karla-200">Query Type<span>*</span></p>
-        <div id="container-radio" class="container-radio">
-          <div id="div-enquiry" class="div-enquiry">
-            <input type="radio" name="type" id="enquiry" value="enquiry">
-            <label for="enquiry">General Enquiry</label>
+    <div class="main-container karla-200">
+      <form id="form">
+        <h1 class="karla-700">
+          Contact Us
+        </h1>
+
+        <div id="container-name">
+          <div id="container-first-name" class="container-first-name">
+            <label for="first-name">First Name <span>*</span> </label><input type="text" name="firstName"
+              id="first-name">
+            <p id="error-first-name" class="error">This field is required</p>
           </div>
-          <div id="div-request" class="div-request">
-            <input type="radio" name="type" id="request" value="request">
-            <label for="request">Support Request</label>
+          <div id="container-last-name" class="container-last-name">
+            <label for="last-name">Last Name <span>*</span></label> <input type="text" name="lastName" id="last-name">
+            <p class="error" id="error-last-name">This field is required</p>
           </div>
         </div>
-        <p class="error karla-200" id="error-query-type">Please select a query type</p>
-      </div>
- 
-      <div id="container-message" class="container-message">
-        <p class="karla-200">Message <span>*</span></p> <textarea type="text" name="message" id="message" class="karla-200""></textarea>
-        <p class="error karla-200" id="error-message">This field is required</p>
+
+        <div id="container-email" class="container-email">
+          <label for="email">Email Address <span>*</span></label>
+          <input type="email" name="email" id="email">
+          <p class="error" id="error-email">This field is required</p>
+          <p class="error" id="error-valid-email">Please enter a valid email address</p>
+
+        </div>
+
+        <div id="container-query">
+          <p class="karla-200">Query Type<span>*</span></p>
+          <div id="container-radio" class="container-radio">
+            <div id="div-enquiry" class="div-enquiry">
+              <input type="radio" name="type" id="enquiry" value="enquiry">
+              <label for="enquiry">General Enquiry</label>
+            </div>
+            <div id="div-request" class="div-request">
+              <input type="radio" name="type" id="request" value="request">
+              <label for="request">Support Request</label>
+            </div>
+          </div>
+          <p class="error karla-200" id="error-query-type">Please select a query type</p>
+        </div>
+
+        <div id="container-message" class="container-message">
+          <label for="message" class="karla-200">Message <span>*</span></label> <textarea type="text" name="message"
+            id="message" class="karla-200""></textarea>
+        <p class=" error karla-200" id="error-message">This field is required</p>
       </div>
 
       <div id="container-consent" class="consent">
         <input type="checkbox" id="consent" name="consent" value="false"> <label for="consent" id="consent-label">I
-          hereby consent to being contacted by the team <span>*</span></label>
+           consent to being contacted by the team <span>*</span></label>
         <p class="error karla-200" id="error-consent">To submit this form, please consent to being contacted</p>
       </div>
 
       <button class="karla-200 submit" type="submit" id="submit" onsubmit="return validateForm()">Submit</button>
     </form>
   </div>
+</main>
 
-
+<footer>
   <div class="attribution karla-200">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
     Coded by <a href="https://www.linkedin.com/in/roger-cruz-531581a5/">Roger Cruz</a>.
   </div>
+</footer>
   <script src="index.js"></script>
 </body>
 
